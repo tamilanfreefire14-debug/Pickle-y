@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <title>ADI POLI PICKLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #8d1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #2c2c2c;
+    }
+
+    nav a {
+      color: white;
+      padding: 12px 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover { background: #444; }
+
+    .card {
+      background: white;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    /* Image Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      display: block;
+      background: #25D366;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Payment QR */
+    .qr {
+      text-align: center;
+    }
+
+    .qr img {
+      width: 200px;
+      max-width: 100%;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      nav a { flex: 1 1 100%; text-align: center; }
+    }
+
+    /* Desktop */
+    @media (min-width: 768px) {
+      .card { max-width: 900px; margin: 20px auto; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>ADI POLI PICKLE</h1>
+  <p>Homemade • Fresh • Tasty</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#products">Pickles</a>
+  <a href="#payment">Payment</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="card">
+  <h2>Welcome</h2>
+  <p>100% Homemade முறையில் தயாரிக்கப்படும் சுத்தமான Pickles.</p>
+</section>
+
+<section id="gallery" class="card">
+  <h2>📸 Pickle Images</h2>
+  <div class="gallery">
+    <img src=https://uploads.onecompiler.io/447rgkp3y/447rgvja6/1000070392.jpg alt="Chicken Pickle">
+    <img src=https://uploads.onecompiler.io/447rgkp3y/447rgas6r/1000071120.jpg alt="Homemade Pickle">
+  </div>
+</section>
+
+<section id="products" class="card">
+  <h2>🍗 Our Pickles</h2>
+  <ul>
+    <li>Chicken Pickle – 250g ₹399</li>
+    <li>Chicken Pickle – 500g ₹599</li>
+    <li>Chicken Pickle – 1kg ₹799</li>
+  </ul>
+
+  <a class="whatsapp" href="https://wa.me/+919659999202">
+    📲 WhatsApp-ல் Order செய்ய
+  </a>
+</section>
+
+<section id="payment" class="card qr">
+  <h2>💳 Payment QR</h2>
+  <p>GPay / PhonePe / Paytm</p>
+  <img src=https://uploads.onecompiler.io/447rgkp3y/447rgas6r/1000071636.png alt="Payment QR Code">
+</section>
+
+<section id="contact" class="card">
+  <h2>📞 Contact</h2>
+  <p>📍 Tamil Nadu</p>
+  <p>📱 9600891542</p>
+</section>
+
+<footer>
+  <p>© 2025 ADI POLI PICKLE</p>
+</footer>
+
+</body>
+</html>
